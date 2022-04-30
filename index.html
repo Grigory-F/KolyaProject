@@ -29,26 +29,27 @@
         <title></title>
     </head>
     <body class="page">
-        <header class="bg-white">
+        <header class="bg-white py-2">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <p class="m-0 fs-5">Vipiska.<span>online</span></p>
-                        <p class="m-0 fs-6 text-uppercase">ПРОВЕРКА <span>НЕДВИЖИМОСТИ</span></p>
+                        <p class="m-0 fs-4 fw-bold text-primary">Vipiska.<span class="text-secondary">online</span></p>
+                        <p class="m-0 fs-6 text-uppercase text-secondary">ПРОВЕРКА <span class="text-primary">НЕДВИЖИМОСТИ</span></p>
                     </div>
+                    <!-- class="d-flex align-items-center" -->
                     <div>
-                        <ul class="fw-bold">
-                            <li>
-                                <a href="#">Главная</a>
+                        <ul class="fw-bold list-unstyled d-flex text-uppercase m-0 h-100">
+                            <li class="me-4">
+                                <a href="#" class="text-decoration-none">Главная</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#" class="text-decoration-none">Виды выписок</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#" class="text-decoration-none">Как получить выписку</a>
                             </li>
                             <li>
-                                <a href="#">Виды выписок</a>
-                            </li>
-                            <li>
-                                <a href="#">Как получить выписку</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
+                                <a href="#" class="text-decoration-none">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -56,10 +57,90 @@
             </div>
         </header>
         <main class="main">
-            <div class="container">
-                <h1>Заказать выписку(отчет) ЕГРН</h1>
-                <div>wddwwd</div>
-            </div>
+            <section class="bg-primary py-5">
+                <div class="container">
+                    <h1 class="text-white mb-5">Заказать выписку(отчет) ЕГРН</h1>
+                    <div class="d-flex mb-5">
+                        <input class="d-block p-3 fs-4 w-75" type="text" placeholder="Введите кадастровый номер или адрес объекта" />
+                        <button class="btn btn-secondary px-5 text-white fs-4 fw-bold text-uppercase">Найти</button>
+                    </div>
+                    <p class="fs-6">
+                        В связи с принятием законопроекта 120-ФЗ "О внесении изменений в федеральный закон о государственной регистрации недвижимости", мы больше не предоставляем выписки ЕГРН. Теперь
+                        на нашем сайте можете получить отчет, сформированный на основании данных из выписки ЕГРН. Отчет содержит информацию из выписки ЕГРН, т.е. изменилось только название.
+                    </p>
+                    <p class="text-white fs-6">
+                        Все данные указанные в выписке(отчете) загружаются из базы Росреестра в онлайн режиме. Срок получения выписки(отчета) занимает от 5 минут до 72 часов. Все зависит от
+                        загруженности базы данных Росреестра.
+                    </p>
+                </div>
+            </section>
+            <section">
+                <div class="container py-5">
+                    <h2 class="mb-5">Виды выписок(отчетов) Егрн</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="p-3 border border-primary d-flex flex-column justify-content-between h-100 m-2">
+                                <h3 class="text-center mb-3">Сведения об основных характеристиках объекта недвижимости</h3>
+                                <div class="text-third fs-5">
+                                    <p>✔️ Текущий собственник</p>
+
+                                    <p>❌ История всех собственников</p>
+
+                                    <p>❌ Дата Регистрации</p>
+
+                                    <p>❌ Дата прекращения прав</p>
+
+                                    <p>✔️ Залог, запрет на перерегистрацию</p>
+
+                                    <p>✔️ Кадастровая стоимость</p>
+                                </div>
+                                <p class="text-primary text-center fs-3">49 руб</p>
+                                <button class="btn btn-primary btn-lg w-100 fs-4 p-3">Получить</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="p-3 border border-primary d-flex flex-column justify-content-between h-100 m-2">
+                                <h3 class="text-center mb-3">Сведения о переходе прав на объект недвижимости</h3>
+                                <div class="text-third fs-5">
+                                    <p>✔️ Текущий собственник</p>
+
+                                    <p>✔️ История всех собственников</p>
+
+                                    <p>✔️ Дата Регистрации</p>
+
+                                    <p>✔️ Дата прекращения прав</p>
+
+                                    <p>❌ Залог, запрет на перерегистрацию</p>
+
+                                    <p>❌ Кадастровая стоимость</p>
+                                </div>
+                                <p class="text-primary text-center fs-3">49 руб</p>
+                                <button class="btn btn-primary btn-lg w-100 fs-4 p-3">Получить</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                            <div class="p-3 border border-primary d-flex flex-column justify-content-between h-100 m-2">
+                                <h3 class="text-center mb-3">Полная информация об объекте недвижимости</h3>
+                                <div class="text-third fs-5">
+                                    <p>✔️ Текущий собственник</p>
+
+                                    <p>✔️ История всех собственников</p>
+
+                                    <p>✔️ Дата Регистрации</p>
+
+                                    <p>✔️ Дата прекращения прав</p>
+
+                                    <p>✔️ Залог, запрет на перерегистрацию</p>
+
+                                    <p>✔️ Кадастровая стоимость</p>
+                                </div>
+                                <p class="text-primary text-center fs-3">79 руб</p>
+                                <button class="btn btn-primary btn-lg w-100 fs-4 p-3">Получить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <script src=".js" defer></script>
     </body>
