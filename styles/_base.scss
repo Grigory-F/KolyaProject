@@ -7,8 +7,8 @@
     align-items: center;
 }
 .burder-menu {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     position: relative;
     border: 1px solid $primary;
     cursor: pointer;
@@ -25,10 +25,10 @@
         transition: 0.3s ease;
     }
     &::before {
-        bottom: 15px;
+        bottom: 10px;
     }
     &::after {
-        top: 15px;
+        top: 10px;
     }
 
     & > span {
@@ -48,11 +48,11 @@
             left: 0;
         }
         &::before {
-            transform: rotate(45deg) translateY(-13px) translateX(-4px);
+            transform: rotate(45deg) translateY(-8px) translateX(0px);
             bottom: 15px;
         }
         &::after {
-            transform: rotate(-45deg) translateY(13px) translateX(-4px);
+            transform: rotate(-45deg) translateY(7px) translateX(0px);
             top: 15px;
         }
         & > span {
